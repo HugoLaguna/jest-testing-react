@@ -19,14 +19,13 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - dependencies-cache
       - run:
-          name: Install Serverless CLI and dependencies
+          name: Install dependencies
           command: |
-            sudo npm i -g serverless
             npm install
       # run tests
       - run: 
-          name: Run tests with code coverage
-          command: npm test --coverage
+          name: Run tests 
+          command: npm test 
       
       - save_cache:
           paths:
