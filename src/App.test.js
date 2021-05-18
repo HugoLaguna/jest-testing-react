@@ -23,6 +23,7 @@ describe("Services Mocks", ()=>{
   it("API Service", async ()=>{
     await act(async()=>render(<App />))
     expect(screen.getByText(/\d/i)).toBeInTheDocument()
+    expect(screen.getByTestId('custom-element')).toBeInTheDocument()
   })
 
 })
