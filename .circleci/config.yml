@@ -9,7 +9,7 @@ jobs:
           - main
     docker:
       # specify the version you desire here
-      - image: circleci/node:9.9.0
+      - image: circleci/node:14.15.4
     steps:
       - checkout
       # Download and cache dependencies
