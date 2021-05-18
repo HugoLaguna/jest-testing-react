@@ -10,6 +10,7 @@ test("Verify Texts", ()=>{
 describe("Services Mocks", ()=>{
   // mock FETCH
   let originalFetch;
+  
   beforeEach(() => {
       originalFetch = global.fetch;
       global.fetch = jest.fn(() => Promise.resolve({
