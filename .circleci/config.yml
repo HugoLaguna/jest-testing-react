@@ -6,7 +6,7 @@ jobs:
       branches:
         only:
           - develop
-          - master
+          - main
     docker:
       # specify the version you desire here
       - image: circleci/node:9.9.0
