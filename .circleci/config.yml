@@ -6,10 +6,10 @@ jobs:
       branches:
         only:
           - develop
-          - master
+          - main
     docker:
       # specify the version you desire here
-      - image: circleci/node:9.9.0
+      - image: circleci/node:14.15.4
     steps:
       - checkout
       # Download and cache dependencies
@@ -25,7 +25,7 @@ jobs:
       # run tests
       - run: 
           name: Run tests 
-          command: npm test 
+          command: npm run test 
       
       - save_cache:
           paths:
