@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          EXPERIMENTALITY
+          EXPERIMENTALITY TEST
         </a>
       </header>
     </div>
